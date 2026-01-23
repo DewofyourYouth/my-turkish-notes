@@ -1,0 +1,19 @@
+baseURL: "https://example.org/"
+languageCode: "en-us"
+title: "Turkish Language Notes"
+theme:
+  - PaperMod
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  homeInfoParams:
+    Title: Hi there 👋
+    Content: Welcome to my notes for learning the Turkish 🇹🇷 Language
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
