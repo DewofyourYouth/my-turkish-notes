@@ -127,14 +127,35 @@
   z-index: 1;
 }
 
-.home-hero .entry-header h1 {
-  font-size: clamp(2.2rem, 4vw, 3.3rem);
-  margin-bottom: 0.75rem;
-  text-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+.home-hero .entry-header,
+.home-hero .entry-content {
+  display: inline-block;
+  padding: 0.6rem 0.9rem;
+  border-radius: 14px;
+  background: rgba(255, 250, 243, 0.74);
+  box-shadow: 0 10px 24px -18px rgba(26, 18, 12, 0.45);
+  backdrop-filter: blur(6px);
+}
+
+.home-hero .entry-header {
+  margin-bottom: 0.65rem;
 }
 
 .home-hero .entry-content {
-  font-size: 1.05rem;
+  margin-top: 0.35rem;
+}
+
+.home-hero .entry-header h1 {
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  line-height: 1.12;
+  letter-spacing: 0.005em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.home-hero .entry-content {
+  font-size: 1.12rem;
+  line-height: 1.7;
   max-width: 100%;
 }
 
