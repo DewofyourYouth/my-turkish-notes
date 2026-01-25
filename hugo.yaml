@@ -9,7 +9,7 @@ outputs:
     - HTML
     - RSS
     - JSON
-
+disqusShortname: "turk-defter"
 params:
   homeInfoParams:
     Title: Hi there 👋
