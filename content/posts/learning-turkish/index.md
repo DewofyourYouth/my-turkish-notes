@@ -8,6 +8,7 @@ tags:
   - beginner
   - duolingo
   - basic-phrases
+  - grammar
 draft: false
 author: Jacob
 showReadingTime: true
