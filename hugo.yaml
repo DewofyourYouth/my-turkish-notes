@@ -13,6 +13,19 @@ params:
   homeInfoParams:
     Title: Hi there 👋
     Content: Welcome to my notes for learning the Turkish 🇹🇷 Language
+  homeHeroImage: hero.jpg
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Posts
+      url: /posts/
+      weight: 2
+    - name: Archives
+      url: /archives/
+      weight: 3
 markup:
   goldmark:
     renderer:

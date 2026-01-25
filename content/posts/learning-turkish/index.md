@@ -7,10 +7,16 @@ tags:
   - pronunciation
   - beginner
   - duolingo
+  - basic-phrases
 draft: false
+author: Jacob
+showReadingTime: true
+showAuthor: true
 categories:
-  - Learning & Languages
-featuredImage: istanbul-airport.jpg
+cover:
+  image: istanbul-airport.jpg
+images: 
+ - istanbul-airport.jpg
 summary: A beginner-friendly Turkish phrase list with IPA cues, early pronunciation notes, and why Duolingo basics miss what you actually need first.
 series:
   - Turkish

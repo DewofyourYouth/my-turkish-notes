@@ -1,0 +1,14 @@
+{{- with site.Params.homeInfoParams }}
+{{- $hero := site.Params.homeHeroImage }}
+<article class="first-entry home-info home-hero{{ if $hero }} has-hero{{ end }}"{{ if $hero }} style="--home-hero-image: url('{{ $hero | absURL }}')"{{ end }}>
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}
