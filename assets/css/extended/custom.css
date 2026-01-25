@@ -172,6 +172,12 @@
   );
 }
 
+:root[data-theme="dark"] .home-hero .entry-header,
+:root[data-theme="dark"] .home-hero .entry-content {
+  background: rgba(20, 16, 12, 0.7);
+  box-shadow: 0 10px 24px -18px rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 1000px) {
   .home-hero.has-hero {
     background-size: cover;
