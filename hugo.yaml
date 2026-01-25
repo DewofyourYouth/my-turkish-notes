@@ -1,6 +1,7 @@
 baseURL: "https://my-turkish-notes.pages.dev/"
 languageCode: "en-us"
-title: "Turkish Language Notes"
+title: "Türk Defter"
+description: "a working notebook for Turkish"
 theme:
   - PaperMod
 outputs:
@@ -14,6 +15,11 @@ params:
     Title: Hi there 👋
     Content: Welcome to my notes for learning the Turkish 🇹🇷 Language
   homeHeroImage: hero.jpg
+  assets:
+    favicon: images/favicon.ico
+    favicon16x16: images/favicon-16x16.png
+    favicon32x32: images/favicon-32x32.png
+    apple_touch_icon: images/apple-touch-icon.png
 
 menu:
   main:
