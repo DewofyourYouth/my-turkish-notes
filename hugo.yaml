@@ -35,6 +35,9 @@ menu:
     - name: Archives
       url: /archives/
       weight: 3
+    - name: Tags
+      url: /tags/
+      weight: 4
 markup:
   goldmark:
     renderer:

@@ -1,0 +1,45 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- $terms := .Data.Terms.Alphabetical }}
+{{- $min := 9999 }}
+{{- $max := 0 }}
+{{- range $terms }}
+  {{- $count := .Count }}
+  {{- if lt $count $min }}{{ $min = $count }}{{ end }}
+  {{- if gt $count $max }}{{ $max = $count }}{{ end }}
+{{- end }}
+{{- $spread := sub $max $min }}
+
+<ul class="terms-cloud">
+  {{- range $i, $term := $terms }}
+    {{- $name := $term.Name }}
+    {{- $count := $term.Count }}
+    {{- $weight := 0.0 }}
+    {{- if gt $spread 0 }}
+      {{- $weight = div (sub $count $min) $spread }}
+    {{- end }}
+    {{- $size := add 0.95 (mul $weight 1.45) }}
+    {{- $hue := mod (mul $i 41) 360 }}
+    {{- with site.GetPage (printf "/%s/%s" $.Type $name) }}
+    <li>
+      <a class="term-chip" href="{{ .Permalink }}" style="--cloud-size: {{ printf "%.2f" $size }}rem; --cloud-hue: {{ $hue }};">
+        <span class="term-name">{{ .Name }}</span>
+        <span class="term-count">{{ $count }}</span>
+      </a>
+    </li>
+    {{- end }}
+  {{- end }}
+</ul>
+
+{{- end }}{{/* end main */ -}}
