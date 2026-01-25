@@ -220,6 +220,7 @@
 .post-content audio {
   display: block;
   width: 100%;
+  min-width: 220px;
   max-width: 260px;
 }
 

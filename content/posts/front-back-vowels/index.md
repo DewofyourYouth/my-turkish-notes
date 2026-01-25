@@ -34,6 +34,17 @@ Turkish vowels come in two harmony groups. The **last vowel** in a word controls
 
 > **Note:** Turkish has two “i” sounds: **i** (dotted) and **ı** (dotless). They belong to different groups.
 
+| VOWEL | SOUND                                      | TYPE  |
+| ----- | ------------------------------------------ | ----- |
+| A     | <audio controls src="audio/a.m4a"></audio> | BACK  |
+| I     | <audio controls src="audio/ı.m4a"></audio> | BACK  |
+| O     | <audio controls src="audio/o.m4a"></audio> | BACK  |
+| U     | <audio controls src="audio/u.m4a"></audio> | BACK  |
+| E     | <audio controls src="audio/e.m4a"></audio> | FRONT |
+| İ     | <audio controls src="audio/i.m4a"></audio> | FRONT |
+| Ö     | <audio controls src="audio/ö.m4a"></audio> | FRONT |
+| Ü     | <audio controls src="audio/ü.m4a"></audio> | FRONT |
+
 ## The Simple Rule
 
 Find the **last vowel** in the word:
