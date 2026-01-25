@@ -9,12 +9,15 @@ outputs:
     - HTML
     - RSS
     - JSON
-disqusShortname: "turk-defter"
+services:
+  disqus:
+    shortname: "turk-defter"
 params:
   homeInfoParams:
     Title: Hi there 👋
     Content: Welcome to my notes for learning the Turkish 🇹🇷 Language
   homeHeroImage: hero.jpg
+  comments: true
   assets:
     favicon: images/favicon.ico
     favicon16x16: images/favicon-16x16.png
