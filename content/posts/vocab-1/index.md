@@ -30,7 +30,9 @@ author: Jacob Shore
 | <img src="images/couch.jpg" alt="couch" width="200"> | O ne?    | O kanepe    |
 | <img src="images/cow.jpg" alt="cow" width="200">     | Şu ne?   | Şu inek     |
 
-## Alfabe Exercize
+## Alfabe + Plural Exercize
+
+![Cars](images/cars.jpg)
 
 | Word     | Plural      | Translation      |
 | -------- | ----------- | ---------------- |
