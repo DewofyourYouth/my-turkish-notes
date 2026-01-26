@@ -17,6 +17,8 @@ params:
   homeInfoParams:
     Title: Hi there 👋
     Content: Welcome to my notes for learning the Turkish 🇹🇷 Language
+  images:
+    - images/site-image.jpg
   cover:
     responsiveImages: true
   homeHeroImage: hero.jpg
