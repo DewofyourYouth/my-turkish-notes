@@ -11,16 +11,12 @@ showReadingTime: true
 showAuthor: true
 summary: A quick, practical guide to Turkish front/back vowels and how they control suffixes like plural -lar/-ler.
 tags:
-  - turkish
   - pronunciation
   - grammar
   - vowel-harmony
 showReadingTime: true
 showAuthor: true
 categories:
-series:
-  - Turkish
-series_order: 2
 ---
 
 Turkish vowels come in two harmony groups. The **last vowel** in a word controls which vowel you use in many suffixes.

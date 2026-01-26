@@ -5,7 +5,6 @@ tags:
  - beginner
  - vocabulary
  - alphabet
- - turkish
 showReadingTime: true
 categories:
   - vocabulary
