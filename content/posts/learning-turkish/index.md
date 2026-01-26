@@ -39,11 +39,11 @@ And more fundamentally, it seems backwards to learn sentences like _“the woman
 
 Before animals, colors, or abstract sentences, there are a few phrases that let you survive.
 
-> These recordings reflect *my* pronunciation at a very early stage. I started learning Turkish this week, and I didn’t have time to record audio for every phrase, so treat the recordings that are present as provisional rather than authoritative.
+{{< notice warning >}}
+These recordings reflect *my* pronunciation at a very early stage. I started learning Turkish this week, and I didn’t have time to record audio for every phrase, so treat the recordings that are present as provisional rather than authoritative.
 
-> For correct pronunciation, consult the IPA provided. If you don’t read IPA, you can use [IPA Reader](https://ipa-reader.com/) to hear a neutral rendering based on the transcription.
-
-
+For correct pronunciation, consult the IPA provided. If you don’t read IPA, you can use [IPA Reader](https://ipa-reader.com/) to hear a neutral rendering based on the transcription.
+{{< / notice  >}}
 
 ### Greetings & Goodbyes
 
