@@ -19,20 +19,20 @@ author: Jacob Shore
 
 
 
-| Image                                                | Question | Answer      |
-| ---------------------------------------------------- | -------- | ----------- |
-| <img src="images/pants.jpg" alt="pants" width="200"> | Bu ne?   | Bu pantolon |
-| <img src="images/bus.jpg" alt="bus" width="200">     | Bu ne?   | Bu otobüs   |
-| <img src="images/fork.jpg" alt="fork" width="200">   | O ne?    | O çatal     |
-| <img src="images/knife.jpg" alt="knife" width="200"> | Şu ne?   | Şu biçak    |
-| <img src="images/apple.jpg" alt="apple" width="200"> | Bu ne?   | Bu elma     |
-| <img src="images/clock.jpg" alt="clock" width="200"> | Bu ne?   | Bu saat     |
-| <img src="images/couch.jpg" alt="couch" width="200"> | O ne?    | O kanepe    |
-| <img src="images/cow.jpg" alt="cow" width="200">     | Şu ne?   | Şu inek     |
+| Image                                                         | Question | Answer      |
+| ------------------------------------------------------------- | -------- | ----------- |
+| {{< figure src="images/pants.jpg" alt="pants" width="200" >}} | Bu ne?   | Bu pantolon |
+| {{< figure src="images/bus.jpg" alt="bus" width="200" >}}     | Bu ne?   | Bu otobüs   |
+| {{< figure src="images/fork.jpg" alt="fork" width="200" >}}   | O ne?    | O çatal     |
+| {{< figure src="images/knife.jpg" alt="knife" width="200" >}} | Şu ne?   | Şu biçak    |
+| {{< figure src="images/apple.jpg" alt="apple" width="200" >}} | Bu ne?   | Bu elma     |
+| {{< figure src="images/clock.jpg" alt="clock" width="200" >}} | Bu ne?   | Bu saat     |
+| {{< figure src="images/couch.jpg" alt="couch" width="200" >}} | O ne?    | O kanepe    |
+| {{< figure src="images/cow.jpg" alt="cow" width="200" >}}     | Şu ne?   | Şu inek     |
 
 ## Alfabe + Plural Exercize
 
-![Cars](images/cars.jpg)
+{{< figure src="images/cars.jpg" width="400">}}
 
 | Word     | Plural      | Translation      |
 | -------- | ----------- | ---------------- |
