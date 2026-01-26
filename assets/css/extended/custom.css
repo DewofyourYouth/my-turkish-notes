@@ -327,3 +327,25 @@
     padding: 0.25rem 0.6rem;
   }
 }
+
+:root[data-theme="dark"] .notice {
+  --title-color: #fff;
+  --title-background-color: #069;
+  --content-color: #ddd;
+  --content-background-color: #023;
+}
+
+:root[data-theme="dark"] .notice.info {
+  --title-background-color: #a50;
+  --content-background-color: #420;
+}
+
+:root[data-theme="dark"] .notice.tip {
+  --title-background-color: #363;
+  --content-background-color: #121;
+}
+
+:root[data-theme="dark"] .notice.warning {
+  --title-background-color: #800;
+  --content-background-color: #400;
+}
