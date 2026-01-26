@@ -32,7 +32,10 @@ Turkish vowels come in two harmony groups. The **last vowel** in a word controls
 | Back  | **a ı o u** | said toward the back of the mouth  |
 | Front | **e i ö ü** | said toward the front of the mouth |
 
-> **Note:** Turkish has two “i” sounds: **i** (dotted) and **ı** (dotless). They belong to different groups.
+{{< notice note >}}
+Turkish has two “i” sounds: **i** (dotted) and **ı** (dotless). They belong to different groups.
+{{< /notice >}}
+
 
 | VOWEL | SOUND                                      | TYPE  |
 | ----- | ------------------------------------------ | ----- |
