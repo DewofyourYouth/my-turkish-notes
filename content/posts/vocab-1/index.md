@@ -19,16 +19,16 @@ author: Jacob Shore
 
 
 
-| Image                      | Question | Answer      |
-| -------------------------- | -------- | ----------- |
-| ![pants](images/pants.png) | Bu ne?   | Bu pantolon |
-| ![bus](images/bus.png)     | Bu ne?   | Bu otobüs   |
-| ![fork](images/fork.png)   | O ne?    | O çatal     |
-| ![knife](images/knife.png) | Şu ne?   | Şu biçak    |
-| ![apple](images/apple.png) | Bu ne?   | Bu elma     |
-| ![clock](images/clock.png) | Bu ne?   | Bu saat     |
-| ![couch](images/couch.png) | O ne?    | O kanepe    |
-| ![cow](images/cow.png)     | Şu ne?   | Şu inek     |
+| Image                                                | Question | Answer      |
+| ---------------------------------------------------- | -------- | ----------- |
+| <img src="images/pants.jpg" alt="pants" width="200"> | Bu ne?   | Bu pantolon |
+| <img src="images/bus.jpg" alt="bus" width="200">     | Bu ne?   | Bu otobüs   |
+| <img src="images/fork.jpg" alt="fork" width="200">   | O ne?    | O çatal     |
+| <img src="images/knife.jpg" alt="knife" width="200"> | Şu ne?   | Şu biçak    |
+| <img src="images/apple.jpg" alt="apple" width="200"> | Bu ne?   | Bu elma     |
+| <img src="images/clock.jpg" alt="clock" width="200"> | Bu ne?   | Bu saat     |
+| <img src="images/couch.jpg" alt="couch" width="200"> | O ne?    | O kanepe    |
+| <img src="images/cow.jpg" alt="cow" width="200">     | Şu ne?   | Şu inek     |
 
 ## Alfabe Exercize
 
