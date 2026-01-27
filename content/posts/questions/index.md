@@ -37,7 +37,7 @@ Here are some of the question words in Turkish:
 | Kim?      | Who?                           |
 | Kaç?      | How many / much?   (countable) |
 
-{{< notice tip >}}
+{{< notice note >}}
 
 ### Some Relevant Vocab 😉
 
