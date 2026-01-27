@@ -9,6 +9,7 @@ draft: true
 author: Jacob Shore
 showReadingTime: true
 showAuthor: true
+showTOC: True
 categories:
   - grammar
 cover:
