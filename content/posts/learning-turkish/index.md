@@ -13,9 +13,9 @@ showReadingTime: true
 showAuthor: true
 categories:
 cover:
-  image: istanbul-airport.jpg
+  image: owl.jpg
 images: 
- - istanbul-airport.jpg
+ - owl.jpg
 summary: A beginner-friendly Turkish phrase list with IPA cues, early pronunciation notes, and why Duolingo basics miss what you actually need first.
 ---
 I started learning Turkish knowing **exactly zero words**.
