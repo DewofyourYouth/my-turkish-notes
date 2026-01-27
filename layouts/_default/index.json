@@ -1,0 +1,47 @@
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- $.Scratch.Add "index" slice -}}
+
+{{- range site.RegularPages -}}
+  {{- if and (not .Params.searchHidden) (ne .Layout "archives") (ne .Layout "search") -}}
+    {{- $cover := "" -}}
+    {{- if .Params.cover.image -}}
+      {{- $pageBundleCover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) -}}
+      {{- $globalResourcesCover := (resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) -}}
+      {{- $coverResource := (or $pageBundleCover $globalResourcesCover) -}}
+      {{- if $coverResource -}}
+        {{- $cover = $coverResource.Permalink -}}
+      {{- else if (eq .Params.cover.relative true) -}}
+        {{- $cover = ((path.Join .RelPermalink .Params.cover.image) | absURL) -}}
+      {{- else -}}
+        {{- $cover = (.Params.cover.image | absURL) -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $pageImages := partial "templates/_funcs/get-page-images" . -}}
+      {{- with index $pageImages 0 -}}
+        {{- $cover = .Permalink -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $images := slice -}}
+    {{- with partial "templates/_funcs/get-page-images" . -}}
+      {{- range . -}}
+        {{- $images = $images | append .Permalink -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $.Scratch.Add "index" (dict
+      "title" .Title
+      "content" .Plain
+      "permalink" .Permalink
+      "summary" .Summary
+      "date" (.Date.Format $iso8601)
+      "lastmod" (.Lastmod.Format $iso8601)
+      "cover" $cover
+      "images" $images
+      "tags" (.Params.tags | default (slice))
+      "categories" (.Params.categories | default (slice))
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $.Scratch.Get "index" | jsonify -}}

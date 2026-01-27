@@ -39,7 +39,7 @@ Here are some of the question words in Turkish:
 
 {{< notice note >}}
 
-### Some Relevant Vocab 😉
+**Some Relevant Vocab 😉**
 
 **Soru** → Question \
 **Cavap** → Answer
