@@ -14,8 +14,6 @@ tags:
   - pronunciation
   - grammar
   - vowel-harmony
-showReadingTime: true
-showAuthor: true
 categories:
 ---
 

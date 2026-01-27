@@ -1,9 +1,19 @@
 {{- $twitterImage := "" -}}
 {{- if .Params.cover.image -}}
-  {{- if (ne $.Params.cover.relative true) -}}
-    {{- $twitterImage = .Params.cover.image | absURL -}}
+  {{- $img := .Params.cover.image -}}
+  {{- $url := urls.Parse $img -}}
+  {{- if eq $url.Scheme "" -}}
+    {{- with .Resources.GetMatch $img -}}
+      {{- $twitterImage = .Permalink -}}
+    {{- else -}}
+      {{- if (ne $.Params.cover.relative true) -}}
+        {{- $twitterImage = $img | absURL -}}
+      {{- else -}}
+        {{- $twitterImage = (path.Join .RelPermalink $img) | absURL -}}
+      {{- end -}}
+    {{- end -}}
   {{- else -}}
-    {{- $twitterImage = (path.Join .RelPermalink .Params.cover.image) | absURL -}}
+    {{- $twitterImage = $img -}}
   {{- end -}}
 {{- else -}}
   {{- $images := partial "templates/_funcs/get-page-images" . -}}
