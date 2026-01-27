@@ -207,6 +207,3 @@ Duolingo is effective at training recognition and pattern-matching within its ow
 
 That delay matters, because without the order, vocabulary remains inert.
 
----
-
-Photo by [iSawRed](https://unsplash.com/@isawred?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/logo-Hm4TAny-dag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
