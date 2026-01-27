@@ -26,16 +26,16 @@ summary: A compact reference for Turkish question words and everyday question pa
 
 Here are some of the question words in Turkish:
 
-| Turkish   | English Meaning                |
-| --------- | ------------------------------ |
-| Ne?       | What?                          |
-| Neden?    | Why?                           |
-| Nerede?   | Where?                         |
-| Ne zaman? | When? What time?               |
-| Nasıl?    | How?                           |
-| Hangi?    | Which?                         |
-| Kim?      | Who?                           |
-| Kaç?      | How many / much?   (countable) |
+| Turkish   | IPA         | English Meaning                |
+| --------- | ----------- | ------------------------------ |
+| Ne?       | /ne/        | What?                          |
+| Neden?    | /neˈden/    | Why?                           |
+| Nerede?   | /neˈɾe.de/  | Where?                         |
+| Ne zaman? | /ne zaˈman/ | When? What time?               |
+| Nasıl?    | /naˈsɯɫ/    | How?                           |
+| Hangi?    | /hanˈɟi/    | Which?                         |
+| Kim?      | /cim/       | Who?                           |
+| Kaç?      | /kat͡ʃ/      | How many / much?   (countable) |
 
 {{< notice note >}}
 
@@ -43,6 +43,7 @@ Here are some of the question words in Turkish:
 
 **Soru** → Question \
 **Cavap** → Answer
+
 {{< /notice >}}
 
 ## Phrases
