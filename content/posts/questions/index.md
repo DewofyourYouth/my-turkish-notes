@@ -65,10 +65,10 @@ Here are some of the question words in Turkish:
     caption="Why me!?"
 >}}
 
-- Hangisi onun köpeği?
-- Çay kimin?
-- Kim tavuk yer?
-- Soru ne?
-- Neden ben!?
-- Ne kadar şekeriniz var?
-- Nereye gidiyorsun / gidiyorsunuz?
+- Hangisi onun köpeği? {{< cloze answer="Which is his/her dog?" >}}
+- Çay kimin? {{< cloze answer="Whose tea is this?" >}}
+- Kim tavuk yer? {{< cloze answer="Who eats chicken?" >}}
+- Soru ne? {{< cloze answer="What is the question?" >}}
+- Neden ben!? {{< cloze answer="Why me?" >}}
+- Ne kadar şekeriniz var? {{< cloze answer="How much sugar do you have?" >}}
+- Nereye gidiyorsun / gidiyorsunuz? {{< cloze answer="Where are you going?" >}}

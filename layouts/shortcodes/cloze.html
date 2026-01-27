@@ -1,0 +1,81 @@
+{{- /*
+  Cloze shortcode for clickable/tappable flashcards.
+
+  Usage:
+  {{< cloze "Nasılsın?" >}}
+  {{< cloze answer="Nasılsın?" mask="____" >}}
+*/ -}}
+
+{{- $answer := .Get "answer" | default (.Get 0) -}}
+{{- $mask := .Get "mask" | default "____" -}}
+
+{{- if not $answer -}}
+  {{- errorf "cloze shortcode requires an answer: %s" .Position -}}
+{{- end -}}
+
+{{- /* Load CSS/JS once per page. */ -}}
+{{- if not (.Page.Scratch.Get "cloze-initialized") -}}
+  {{- .Page.Scratch.Set "cloze-initialized" true -}}
+  <style>
+    .cloze {
+      appearance: none;
+      border: 0;
+      padding: 0.05em 0.35em;
+      margin: 0 0.05em;
+      border-radius: 0.35em;
+      cursor: pointer;
+      font: inherit;
+      line-height: inherit;
+      color: inherit;
+      background: color-mix(in srgb, currentColor 12%, transparent);
+      transition: background-color 120ms ease, opacity 120ms ease;
+    }
+
+    .cloze:hover,
+    .cloze:focus-visible {
+      background: color-mix(in srgb, currentColor 18%, transparent);
+      outline: none;
+    }
+
+    .cloze.is-revealed {
+      background: color-mix(in srgb, currentColor 8%, transparent);
+    }
+  </style>
+  <script>
+    (function () {
+      if (window.__clozeInitialized) return;
+      window.__clozeInitialized = true;
+
+      function toggleCloze(el) {
+        var revealed = el.classList.toggle("is-revealed");
+        el.setAttribute("aria-pressed", revealed ? "true" : "false");
+        el.textContent = revealed ? el.dataset.answer : el.dataset.mask;
+      }
+
+      document.addEventListener("click", function (e) {
+        var el = e.target.closest(".cloze");
+        if (!el) return;
+        toggleCloze(el);
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key !== "Enter" && e.key !== " ") return;
+        var el = e.target.closest(".cloze");
+        if (!el) return;
+        e.preventDefault();
+        toggleCloze(el);
+      });
+    })();
+  </script>
+{{- end -}}
+
+<button
+  class="cloze"
+  type="button"
+  aria-pressed="false"
+  data-answer="{{ $answer }}"
+  data-mask="{{ $mask }}"
+>
+  {{- $mask -}}
+</button>
+
