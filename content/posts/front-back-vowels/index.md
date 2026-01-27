@@ -33,16 +33,16 @@ Turkish has two “i” sounds: **i** (dotted) and **ı** (dotless). They belong
 {{< /notice >}}
 
 
-| VOWEL | SOUND                                      | TYPE  |
-| ----- | ------------------------------------------ | ----- |
-| A     | <audio controls src="audio/a.m4a"></audio> | BACK  |
-| I     | <audio controls src="audio/ı.m4a"></audio> | BACK  |
-| O     | <audio controls src="audio/o.m4a"></audio> | BACK  |
-| U     | <audio controls src="audio/u.m4a"></audio> | BACK  |
-| E     | <audio controls src="audio/e.m4a"></audio> | FRONT |
-| İ     | <audio controls src="audio/i.m4a"></audio> | FRONT |
-| Ö     | <audio controls src="audio/ö.m4a"></audio> | FRONT |
-| Ü     | <audio controls src="audio/ü.m4a"></audio> | FRONT |
+| VOWEL | SOUND                               | TYPE  |
+| ----- | ----------------------------------- | ----- |
+| A     | {{< audio-sc src="audio/a.m4a" >}}  | BACK  |
+| I     | {{< audio-sc src="audio/ı.m4a" >}}  | BACK  |
+| O     | {{< audio-sc  src="audio/o.m4a" >}} | BACK  |
+| U     | {{< audio-sc src="audio/u.m4a" >}}  | BACK  |
+| E     | {{< audio-sc src="audio/e.m4a" >}}  | FRONT |
+| İ     | {{< audio-sc src="audio/i.m4a" >}}  | FRONT |
+| Ö     | {{< audio-sc src="audio/ö.m4a" >}}  | FRONT |
+| Ü     | {{< audio-sc src="audio/ü.m4a" >}}  | FRONT |
 
 ## The Simple Rule
 

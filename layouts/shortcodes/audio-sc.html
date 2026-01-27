@@ -1,0 +1,2 @@
+{{- $audio := .Get "src" | default (.Get 0) -}}
+<audio controls src="{{$audio}}"></audio>
