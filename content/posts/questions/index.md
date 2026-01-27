@@ -43,6 +43,7 @@ Here are some of the question words in Turkish:
 - **Nasılsın?** How are you?
 - **Neredesin?** Where are you?
 - **Bu kim?** Who is this?
+- **Nereye?** To where?
 
 ## Examples
 
