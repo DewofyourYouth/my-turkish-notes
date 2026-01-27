@@ -20,6 +20,8 @@ images:
 summary: A compact reference for Turkish question words and everyday question patterns.
 ---
 
+
+
 ## Question Words
 
 Here are some of the question words in Turkish:
@@ -34,6 +36,14 @@ Here are some of the question words in Turkish:
 | Hangi?    | Which?                         |
 | Kim?      | Who?                           |
 | Kaç?      | How many / much?   (countable) |
+
+{{< notice tip >}}
+
+### Some Relevant Vocab 😉
+
+**Soru** → Question \
+**Cavap** → Answer
+{{< /notice >}}
 
 ## Phrases
 

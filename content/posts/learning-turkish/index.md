@@ -206,4 +206,3 @@ Meaning is not carried by word order, helper words, or irregular forms. It is at
 Duolingo is effective at training recognition and pattern-matching within its own exercises. What it postpones is making that underlying order legible early on.
 
 That delay matters, because without the order, vocabulary remains inert.
-
