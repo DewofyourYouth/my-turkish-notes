@@ -35,7 +35,20 @@
   <meta property="og:type" content="website">
 {{- end }}
 
-{{- if .Params.cover.image -}}
+{{- $ogOverride := .Params.og_image -}}
+{{- if $ogOverride -}}
+  {{- $img := $ogOverride -}}
+  {{- $url := urls.Parse $img -}}
+  {{- if eq $url.Scheme "" -}}
+    {{- with .Resources.GetMatch $img -}}
+      <meta property="og:image" content="{{ .Permalink }}">
+    {{- else -}}
+      <meta property="og:image" content="{{ $img | absURL }}">
+    {{- end -}}
+  {{- else -}}
+    <meta property="og:image" content="{{ $img }}">
+  {{- end -}}
+{{- else if .Params.cover.image -}}
   {{- $img := .Params.cover.image -}}
   {{- $url := urls.Parse $img -}}
   {{- if eq $url.Scheme "" -}}

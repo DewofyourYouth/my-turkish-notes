@@ -1,5 +1,18 @@
 {{- $twitterImage := "" -}}
-{{- if .Params.cover.image -}}
+{{- $twitterOverride := .Params.twitter_image -}}
+{{- if $twitterOverride -}}
+  {{- $img := $twitterOverride -}}
+  {{- $url := urls.Parse $img -}}
+  {{- if eq $url.Scheme "" -}}
+    {{- with .Resources.GetMatch $img -}}
+      {{- $twitterImage = .Permalink -}}
+    {{- else -}}
+      {{- $twitterImage = $img | absURL -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $twitterImage = $img -}}
+  {{- end -}}
+{{- else if .Params.cover.image -}}
   {{- $img := .Params.cover.image -}}
   {{- $url := urls.Parse $img -}}
   {{- if eq $url.Scheme "" -}}
