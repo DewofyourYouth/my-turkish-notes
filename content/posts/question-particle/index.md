@@ -15,7 +15,7 @@ images:
   - "front-back.jpeg"
   - "back.jpeg"
   - "front.jpeg"
-summary:
+summary: How the Turkish yes/no question particle changes with vowel harmony, with quick visual guides and practice.
 title: 'Question Particle'
 author: Jacob Shore
 ---
