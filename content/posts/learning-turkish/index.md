@@ -9,6 +9,7 @@ tags:
   - grammar
 draft: false
 author: Jacob
+showTOC: true
 showReadingTime: true
 showAuthor: true
 categories:
