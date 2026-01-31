@@ -75,6 +75,7 @@ Once you see this as a small, closed system rather than four unrelated forms, th
 
 ### Quiz Yourself
 
+Click / tap on the cloze item to reveal the answer.
 See if you can figure out what question particle each question gets:
 
 - Bu araba {{< cloze answer="mı" mask="m*" >}}? (Is this a car?)
