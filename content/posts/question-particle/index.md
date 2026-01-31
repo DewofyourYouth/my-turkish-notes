@@ -1,6 +1,7 @@
 ---
 date: '2026-01-31T20:23:20+02:00'
 draft: false
+showTOC: true
 tags:
  - beginner
  - pronunciation
