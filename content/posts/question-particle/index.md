@@ -21,7 +21,7 @@ author: Jacob Shore
 ---
 ## Beyond Front and Back
 
-We’ve already seen that the eight vowels in Turkish fall into two main camps:
+We’ve [already seen](/posts/front-back-vowels/) that the eight vowels in Turkish fall into two main camps:
 
 - **Back vowels**: **a, ı, o, u**
 - **Front vowels**: **e, i, ö, ü**
