@@ -2,9 +2,9 @@
 date: '2026-01-25T13:58:42+02:00'
 draft: false
 cover:
-    image: tongue.jpg
+    image: front-back.jpeg
 images:
-- tongue.jpg
+- front-back.jpeg
 title: 'Front and Back Vowels'
 author: Jacob Shore
 showReadingTime: true
