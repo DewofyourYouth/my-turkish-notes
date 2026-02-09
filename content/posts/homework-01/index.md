@@ -53,7 +53,7 @@ images:
 
 **Ali**: İyi günler. \
 **Feray**: İyi {{< cloze answer="günler" >}}. \
-**Ali**: Benim {{< cloze answer="adim" >}} Ali. Senin {{< cloze answer="adim" >}} ne? \
-**Feray**: Benim {{< cloze answer="adim" >}} Feray. \
+**Ali**: Benim {{< cloze answer="adin" >}} Ali. Senin {{< cloze answer="adin" >}} ne? \
+**Feray**: Benim {{< cloze answer="adin" >}} Feray. \
 **Ali**: {{< cloze answer="Memnun" >}} oldum. \
 **Feray**: Ben de memnum {{< cloze answer="oldum" >}}.
