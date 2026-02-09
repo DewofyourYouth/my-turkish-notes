@@ -35,7 +35,7 @@ images:
 
 ### Reorder the Phrases in the Conversation
 
-{{< phrase-order >}}  Merhaba | Merhaba |  Benim adim Ebru. Senin adin ne? | Benin adim Ercan | Nasılsın? | Teşekkür ederim, iyiyim. Sen nasılsın? | Ben de iyiyim. Tanıştığımıza memnun oldum. | Ben de memnun oldum. | Hoşça kal. | Güle güle. {{< /phrase-order >}}
+{{< phrase-order >}}  Merhaba | Merhaba |  Benim adım Ebru. Senin adın ne? | Benim adım Ercan | Nasılsın? | Teşekkür ederim, iyiyim. Sen nasılsın? | Ben de iyiyim. Tanıştığımıza memnun oldum. | Ben de memnun oldum. | Hoşça kal. | Güle güle. {{< /phrase-order >}}
 
 ### Cümleleri Tamamlayalım
 
@@ -47,13 +47,13 @@ images:
 **Elif**: {{< cloze answer="Merhaba" >}} \
 **Yusuf**: Nasılsın Elif? \
 **Elif**: {{< cloze answer="İyiyim" >}}, teşekkür {{< cloze answer="ederim">}}, Sen {{< cloze answer="nasılsın" >}}? \
-**Yusuf** Teșekkür {{< cloze answer="ederim">}} Ben de {{< cloze answer="iyiyim" >}}
+**Yusuf** Teşekkür {{< cloze answer="ederim">}} Ben de {{< cloze answer="iyiyim" >}}
 
 #### Conversation Two
 
 **Ali**: İyi günler. \
 **Feray**: İyi {{< cloze answer="günler" >}}. \
-**Ali**: Benim {{< cloze answer="adin" >}} Ali. Senin {{< cloze answer="adin" >}} ne? \
-**Feray**: Benim {{< cloze answer="adin" >}} Feray. \
+**Ali**: Benim {{< cloze answer="adım" >}} Ali. Senin {{< cloze answer="adın" >}} ne? \
+**Feray**: Benim {{< cloze answer="adım" >}} Feray. \
 **Ali**: {{< cloze answer="Memnun" >}} oldum. \
-**Feray**: Ben de memnum {{< cloze answer="oldum" >}}.
+**Feray**: Ben de memnun {{< cloze answer="oldum" >}}.
