@@ -37,11 +37,9 @@ images:
 
 {{< phrase-order >}}  Merhaba | Merhaba |  Benim adım Ebru. Senin adın ne? | Benim adım Ercan | Nasılsın? | Teşekkür ederim, iyiyim. Sen nasılsın? | Ben de iyiyim. Tanıştığımıza memnun oldum. | Ben de memnun oldum. | Hoşça kal. | Güle güle. {{< /phrase-order >}}
 
-### Cümleleri Tamamlayalım
+### Cümleleri Tamamlayalım - Let's Complete the Sentences
 
-#### Let's Complete the Sentences
-
-##### Conversation One
+#### Conversation One
 
 **Yusuf**: Merhaba \
 **Elif**: {{< cloze answer="Merhaba" >}} \
