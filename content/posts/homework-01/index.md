@@ -45,7 +45,7 @@ images:
 **Elif**: {{< cloze answer="Merhaba" >}} \
 **Yusuf**: Nasılsın Elif? \
 **Elif**: {{< cloze answer="İyiyim" >}}, teşekkür {{< cloze answer="ederim">}}, Sen {{< cloze answer="nasılsın" >}}? \
-**Yusuf** Teşekkür {{< cloze answer="ederim">}} Ben de {{< cloze answer="iyiyim" >}}
+**Yusuf**: Teşekkür {{< cloze answer="ederim">}} Ben de {{< cloze answer="iyiyim" >}}
 
 #### Conversation Two
 
