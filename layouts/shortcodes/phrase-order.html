@@ -1,0 +1,289 @@
+{{- /*
+  Phrase ordering shortcode for rearranging a scrambled sentence.
+
+  Usage:
+  {{< phrase-order "Ben|okula|gidiyorum" >}}
+  {{< phrase-order phrases="Ben|okula|gidiyorum" delimiter="|" >}}
+  {{< phrase-order >}}Ben | okula | gidiyorum{{< /phrase-order >}}
+*/ -}}
+
+{{- $delimiter := .Get "delimiter" | default "|" -}}
+{{- $raw := .Get 0 | default (.Get "phrases") | default .Inner -}}
+{{- $raw = strings.TrimSpace $raw -}}
+{{- if not $raw -}}
+  {{- errorf "phrase-order shortcode requires phrases: %s" .Position -}}
+{{- end -}}
+
+{{- $parts := split $raw $delimiter -}}
+{{- $phrases := slice -}}
+{{- range $parts -}}
+  {{- $phrase := strings.TrimSpace . -}}
+  {{- if $phrase -}}
+    {{- $phrases = $phrases | append $phrase -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if lt (len $phrases) 2 -}}
+  {{- errorf "phrase-order shortcode needs at least 2 phrases: %s" .Position -}}
+{{- end -}}
+
+{{- $json := $phrases | jsonify -}}
+
+{{- /* Load CSS/JS once per page. */ -}}
+{{- if not (.Page.Scratch.Get "phrase-order-initialized") -}}
+  {{- .Page.Scratch.Set "phrase-order-initialized" true -}}
+  <style>
+    .phrase-order {
+      --po-ink: #1f2a33;
+      --po-accent: #e06b3b;
+      --po-accent-2: #f2b544;
+      --po-bg: #f8f1e6;
+      --po-card: #fffaf3;
+      border: 1px solid color-mix(in srgb, var(--po-ink) 12%, transparent);
+      border-radius: 1rem;
+      padding: 1.1rem;
+      margin: 1.2rem 0;
+      color: var(--po-ink);
+      background:
+        radial-gradient(120px 120px at 10% 10%, rgba(224, 107, 59, 0.18), transparent 55%),
+        radial-gradient(160px 120px at 90% 10%, rgba(242, 181, 68, 0.2), transparent 60%),
+        linear-gradient(180deg, var(--po-bg), var(--po-card));
+      box-shadow: 0 12px 30px rgba(31, 42, 51, 0.14);
+    }
+
+    .phrase-order__row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      min-height: 2.6rem;
+      padding: 0.4rem;
+      border-radius: 0.75rem;
+      background: color-mix(in srgb, var(--po-ink) 4%, transparent);
+    }
+
+    .phrase-order__label {
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin: 0.6rem 0 0.4rem;
+    }
+
+    .phrase-order__token {
+      appearance: none;
+      border: 1px solid color-mix(in srgb, var(--po-ink) 18%, transparent);
+      background: linear-gradient(135deg, #fff, #fff3e4);
+      color: var(--po-ink);
+      font: inherit;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(31, 42, 51, 0.12);
+      transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .phrase-order__token:hover,
+    .phrase-order__token:focus-visible {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #ffffff, #ffe7cf);
+      border-color: color-mix(in srgb, var(--po-accent) 45%, transparent);
+      box-shadow: 0 10px 20px rgba(31, 42, 51, 0.2);
+      outline: none;
+    }
+
+    .phrase-order__actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.9rem;
+    }
+
+    .phrase-order__button {
+      appearance: none;
+      border: 1px solid color-mix(in srgb, var(--po-ink) 18%, transparent);
+      background: linear-gradient(180deg, #fff, #f6efe6);
+      color: var(--po-ink);
+      font: inherit;
+      padding: 0.35rem 0.9rem;
+      border-radius: 0.65rem;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(31, 42, 51, 0.12);
+      transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .phrase-order__button:hover,
+    .phrase-order__button:focus-visible {
+      transform: translateY(-1px);
+      background: linear-gradient(180deg, #fff, #f2dbc7);
+      border-color: color-mix(in srgb, var(--po-accent) 45%, transparent);
+      box-shadow: 0 10px 20px rgba(31, 42, 51, 0.18);
+      outline: none;
+    }
+
+    .phrase-order__status {
+      margin-top: 0.7rem;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .phrase-order__status.is-correct {
+      color: #1f7a3a;
+    }
+
+    .phrase-order__status.is-wrong {
+      color: #b33a2c;
+    }
+
+    .phrase-order__confetti {
+      position: absolute;
+      width: 10px;
+      height: 14px;
+      border-radius: 2px;
+      background: hsl(var(--po-confetti-hue) 80% 60%);
+      pointer-events: none;
+      animation: phrase-order-confetti 1.1s ease-out forwards;
+    }
+
+    .phrase-order {
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes phrase-order-confetti {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(120px) rotate(160deg);
+        opacity: 0;
+      }
+    }
+  </style>
+  <script>
+    (function () {
+      if (window.__phraseOrderInitialized) return;
+      window.__phraseOrderInitialized = true;
+
+      function shuffle(list) {
+        var arr = list.slice();
+        for (var i = arr.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+        }
+        return arr;
+      }
+
+      function createToken(token, onClick) {
+        var button = document.createElement("button");
+        button.type = "button";
+        button.className = "phrase-order__token";
+        button.textContent = token.text;
+        button.dataset.id = String(token.id);
+        button.addEventListener("click", function () {
+          onClick(token, button);
+        });
+        return button;
+      }
+
+      function setupWidget(root) {
+        var phrases = JSON.parse(root.dataset.phrases || "[]");
+        var bank = root.querySelector("[data-bank]");
+        var build = root.querySelector("[data-build]");
+        var status = root.querySelector("[data-status]");
+        var checkButton = root.querySelector("[data-check]");
+        var resetButton = root.querySelector("[data-reset]");
+
+        var tokens = phrases.map(function (text, index) {
+          return { id: index, text: text };
+        });
+
+        function clearStatus() {
+          status.textContent = "";
+          status.classList.remove("is-correct", "is-wrong");
+        }
+
+        function addToBank(token) {
+          var node = createToken(token, function (tok, button) {
+            addToBuild(tok);
+            button.remove();
+            clearStatus();
+          });
+          bank.appendChild(node);
+        }
+
+        function addToBuild(token) {
+          var node = createToken(token, function (tok, button) {
+            addToBank(tok);
+            button.remove();
+            clearStatus();
+          });
+          build.appendChild(node);
+        }
+
+        function renderBank(items) {
+          bank.innerHTML = "";
+          items.forEach(addToBank);
+        }
+
+        function reset() {
+          build.innerHTML = "";
+          clearStatus();
+          renderBank(shuffle(tokens));
+        }
+
+        function launchConfetti() {
+          var rect = root.getBoundingClientRect();
+          var count = 24;
+          for (var i = 0; i < count; i++) {
+            var piece = document.createElement("span");
+            piece.className = "phrase-order__confetti";
+            piece.style.left = (rect.width * 0.15 + Math.random() * rect.width * 0.7) + "px";
+            piece.style.top = (rect.height * 0.2 + Math.random() * rect.height * 0.2) + "px";
+            piece.style.setProperty("--po-confetti-hue", Math.floor(Math.random() * 360));
+            root.appendChild(piece);
+            setTimeout(function (el) {
+              el.remove();
+            }.bind(null, piece), 1200);
+          }
+        }
+
+        checkButton.addEventListener("click", function () {
+          var selected = Array.from(build.querySelectorAll(".phrase-order__token")).map(function (el) {
+            return el.textContent;
+          });
+          var correct = selected.length === phrases.length && selected.every(function (text, idx) {
+            return text === phrases[idx];
+          });
+          status.textContent = correct ? "Correct!" : "Try again.";
+          status.classList.toggle("is-correct", correct);
+          status.classList.toggle("is-wrong", !correct);
+          if (correct) {
+            launchConfetti();
+          }
+        });
+
+        resetButton.addEventListener("click", reset);
+        reset();
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".phrase-order").forEach(setupWidget);
+      });
+    })();
+  </script>
+{{- end -}}
+
+<div class="phrase-order" data-phrases='{{ $json }}'>
+  <div class="phrase-order__label">Scrambled</div>
+  <div class="phrase-order__row" data-bank></div>
+  <div class="phrase-order__label">Your order</div>
+  <div class="phrase-order__row" data-build></div>
+  <div class="phrase-order__actions">
+    <button type="button" class="phrase-order__button" data-check>Check</button>
+    <button type="button" class="phrase-order__button" data-reset>Reset</button>
+  </div>
+  <div class="phrase-order__status" data-status></div>
+</div>
