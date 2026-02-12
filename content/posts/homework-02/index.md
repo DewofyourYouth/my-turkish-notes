@@ -1,6 +1,6 @@
 ---
 date: '2026-02-12T12:26:49+02:00'
-draft: true
+draft: false
 title: 'Homework 02: Adjectives, Opposites, and Var/Yok'
 summary: 'Practice Turkish adjectives and opposites, then reinforce yes/no response patterns with var/yok exercises and cloze prompts.'
 author: Jacob Shore
