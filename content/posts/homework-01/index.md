@@ -14,6 +14,7 @@ categories:
   - homework
   - basics
 showReadingTime: true
+showTOC: true
 cover:
   image: greetings.jpg
 images:

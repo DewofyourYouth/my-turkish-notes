@@ -6,6 +6,7 @@ tags:
  - vocabulary
  - alphabet
 showReadingTime: true
+showTOC: true
 categories:
   - vocabulary
 cover:

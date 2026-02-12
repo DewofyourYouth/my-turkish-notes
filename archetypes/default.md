@@ -4,6 +4,7 @@ draft: true
 tags:
  - beginner
 showReadingTime: true
+showToc: true
 categories:
 cover:
   image:
