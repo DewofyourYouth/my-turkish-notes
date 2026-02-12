@@ -82,16 +82,16 @@ There isn't: *yok*
 
 ## Lütfen cevap veriniz:
 
-1. İstanbul'da antik tiyatro var mı? Hayır, {{< cloze answer="İstanbul'da antik tiyatro yok." >}}
-2. Hindistan'da kanguru var mı? Hayır, {{< cloze answer="Hindistan'da kanguru yok." >}}
-3. Fransa'da deve var mı? Hayır, {{< cloze answer="Fransa'da deve yok." >}}
-4. Londra'da trafik problemi var mı? Evet, {{< cloze answer="Londra'da trafik problemi var." >}}
-5. Afrika'da aslan var mı? Evet, {{< cloze answer="Afrika'da aslan var." >}}
-6. Kahvede kafein var mı? Evet, {{< cloze answer="kahvede kafein var." >}}
-7. Limonda C vitamini var mı? Evet, {{< cloze answer="limonda C vitamini var." >}}
-8. Kolada C vitamini var mı? Hayır, {{< cloze answer="kolada C vitamini yok." >}}
-9. Sınıfta televizyon var mı? Hayır, {{< cloze answer="sınıfta televizyon yok." >}}
-10. Sinemalarda iyi bir film var mı? Hayır, {{< cloze answer="sinemalarda iyi bir film yok." >}}
+1. İstanbul'da antik tiyatro var mı? {{< cloze answer="Hayır, İstanbul'da antik tiyatro yok." >}}
+2. Hindistan'da kanguru var mı? {{< cloze answer="Hayır, Hindistan'da kanguru yok." >}}
+3. Fransa'da deve var mı? {{< cloze answer="Hayır, Fransa'da deve yok." >}}
+4. Londra'da trafik problemi var mı? {{< cloze answer="Evet, Londra'da trafik problemi var." >}}
+5. Afrika'da aslan var mı? {{< cloze answer="Evet, Afrika'da aslan var." >}}
+6. Kahvede kafein var mı? {{< cloze answer="Evet, kahvede kafein var." >}}
+7. Limonda C vitamini var mı? {{< cloze answer="Evet, limonda C vitamini var." >}}
+8. Kolada C vitamini var mı? {{< cloze answer="Hayır, kolada C vitamini yok." >}}
+9. Sınıfta televizyon var mı? {{< cloze answer="Hayır, sınıfta televizyon yok." >}}
+10. Sinemalarda iyi bir film var mı? {{< cloze answer="Hayır, sinemalarda iyi bir film yok." >}}
 
 ---
 
