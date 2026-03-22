@@ -31,12 +31,12 @@ In Turkish, the present continuous tense (**-iyor**) is the workhorse of the lan
 
 The suffix `-yor` is fixed, but the "buffer" vowel preceding it must satisfy 4-way vowel harmony
 
-| **Last Vowel in Stem** | **Suffix to Add** | **Example**                               |
-| ---------------------- | ----------------- | ----------------------------------------- |
-| **a, ı**               | **-ıyor**         | **bak** (look) $\rightarrow$ bak**ıyor**  |
-| **e, i**               | **-iyor**         | **gel** (come) $\rightarrow$ gel**iyor**  |
-| **o, u**               | **-uyor**         | **koş** (run) $\rightarrow$ koş**uyor**   |
-| **ö, ü**               | **-üyor**         | **gül** (laugh) $\rightarrow$ gül**üyor** |
+| **Last Vowel in Stem** | **Suffix to Add** | **Example**                   |
+| ---------------------- | ----------------- | ----------------------------- |
+| **a, ı**               | **-ıyor**         | **bak** (look) → bak**ıyor**  |
+| **e, i**               | **-iyor**         | **gel** (come) → gel**iyor**  |
+| **o, u**               | **-uyor**         | **koş** (run) → koş**uyor**   |
+| **ö, ü**               | **-üyor**         | **gül** (laugh) → gül**üyor** |
 
 ![Present tense graphic](conjugation-present-tense-graphic.png)
 
