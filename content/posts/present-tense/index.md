@@ -38,7 +38,11 @@ The suffix `-yor` is fixed, but the "buffer" vowel preceding it must satisfy 4-w
 | **o, u**               | **-uyor**         | **koş** (run) → koş**uyor**   |
 | **ö, ü**               | **-üyor**         | **gül** (laugh) → gül**üyor** |
 
-![Present tense graphic](conjugation-present-tense-graphic.png)
+{{< figure
+  src="conjugation-present-tense-graphic.png" alt="Present tense graphic"
+  caption="Present tense graphic."
+  lightbox="true"
+>}}
 
 ## Implementation: 22 Sentences
 
