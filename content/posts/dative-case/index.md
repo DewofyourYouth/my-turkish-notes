@@ -1,6 +1,6 @@
 ---
 date: '2026-03-30T13:00:37+03:00'
-draft: true
+draft: false
 title: 'The Dative Case'
 summary: A practical guide to the Turkish dative case, showing when to use a, e, ya, and ye with a simple rules table and examples.
 author: Jacob Shore
