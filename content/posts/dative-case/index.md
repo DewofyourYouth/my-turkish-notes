@@ -49,13 +49,13 @@ Okul**a** gidiyoruz. → We are going to school.
 
 ## Homework Sentences
 
-1. Doktor hastaneye yardim ediyor.
+1. Doktor hastaneye yardım ediyor.
 2. Öğretmen okula gidiyor.
 3. Oğluma sarılıyorum.
 4. Restorana karar veriyorsun.
 5. Herkes kendi babasına ve annesine teşekkür etsin!
-6. Sen yüze gülüyorsun!
+6. Sen yüzüne gülüyorsun!
 7. Pastaya büyük bir arzuyla bakıyorum.
-8. O eve sahip değil.
+8. O o eve sahip değil.
 9. Yarın hepimiz bara gidiyoruz.
 10. Eve gitmek istiyorum.
