@@ -10,6 +10,7 @@ tags:
   - present-tense
   - conjugation
   - verbs
+  - vowel-harmony
 categories:
   - grammar
   - verbs

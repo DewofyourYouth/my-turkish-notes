@@ -7,8 +7,10 @@ author: Jacob Shore
 tags:
   - beginner
   - grammar
-  - cases
+  - noun-cases
   - dative-case
+  - suffixes
+  - vowel-harmony
 showReadingTime: true
 showTOC: true
 cover:

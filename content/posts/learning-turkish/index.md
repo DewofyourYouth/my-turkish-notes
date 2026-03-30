@@ -2,11 +2,12 @@
 title: What Duolingo Doesn't Teach You About Turkish
 date: 2026-01-15T09:24:40+02:00
 tags:
-  - pronunciation
   - beginner
-  - duolingo
-  - basic-phrases
+  - pronunciation
   - grammar
+  - basic-phrases
+  - survival-phrases
+  - listening-practice
 draft: false
 author: Jacob
 showTOC: true

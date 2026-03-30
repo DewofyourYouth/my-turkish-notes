@@ -12,8 +12,10 @@ tags:
   - beginner
   - adjectives
   - opposites
-  - homework
   - grammar
+  - var-yok
+  - practice
+  - homework
 categories:
   - homework
   - basics
@@ -97,40 +99,40 @@ There isn't: *yok*
 
 ## Lütfen cevap veriniz.
 
-1. Bu kitap iyi mi? {{< cloze answer="." mask="Not done yet." >}}  
-2. Pencere açık mı? {{< cloze answer="." mask="Not done yet." >}}  
-3. Yollar bozuk mu? {{< cloze answer="." mask="Not done yet." >}}  
-4. Antalya uzak mı? {{< cloze answer="." mask="Not done yet." >}}  
-5. İstanbul güzel mi? {{< cloze answer="." mask="Not done yet." >}}  
-6. Aktörler ünlü mü? {{< cloze answer="." mask="Not done yet." >}}  
-7. Bu yemek tuzlu mu? {{< cloze answer="." mask="Not done yet." >}}  
-8. Mozart müzisyen mi? {{< cloze answer="." mask="Not done yet." >}}  
-9. Çay tatlı mı? {{< cloze answer="." mask="Not done yet." >}}  
-10. Hava sıcak mı? {{< cloze answer="." mask="Not done yet." >}}  
+1. Bu kitap iyi mi? {{< cloze answer="Evet, bu kitap iyi." mask="Evet, bu kitap ...." >}}  
+2. Pencere açık mı? {{< cloze answer="Evet, pencere açık." mask="Evet, pencere ...." >}}  
+3. Yollar bozuk mu? {{< cloze answer="Evet, yollar bozuk." mask="Evet, yollar ...." >}}  
+4. Antalya uzak mı? {{< cloze answer="Hayır, Antalya uzak değil." mask="Hayır, Antalya .... ......" >}}  
+5. İstanbul güzel mi? {{< cloze answer="Evet, İstanbul güzel." mask="Evet, İstanbul ...." >}}  
+6. Aktörler ünlü mü? {{< cloze answer="Evet, aktörler ünlü." mask="Evet, aktörler ...." >}}  
+7. Bu yemek tuzlu mu? {{< cloze answer="Evet, bu yemek tuzlu." mask="Evet, bu yemek ...." >}}  
+8. Mozart müzisyen mi? {{< cloze answer="Evet, Mozart müzisyen." mask="Evet, Mozart ........." >}}  
+9. Çay tatlı mı? {{< cloze answer="Hayır, çay tatlı değil." mask="Hayır, çay ..... ......" >}}  
+10. Hava sıcak mı? {{< cloze answer="Evet, hava sıcak." mask="Evet, hava ...." >}}  
 
 ---
 
 ## Lütfen soru sorunuz.
 
-1. {{< cloze answer="." mask="Not done yet." >}}? Hayır, bu bir kitap değil.
-2. {{< cloze answer="." mask="Not done yet." >}}? Hayır, sınıfta kedi yok.
-3. {{< cloze answer="." mask="Not done yet." >}}? Evet, kitapta fotoğraf var.
-4. {{< cloze answer="." mask="Not done yet." >}}? Evet, İstanbul kalabalık.
-5. {{< cloze answer="." mask="Not done yet." >}}? Hayır, David Türk değil.
-6. {{< cloze answer="." mask="Not done yet." >}}? Evet, İstanbul’da üniversite var.
-7. {{< cloze answer="." mask="Not done yet." >}}? Hayır, Türkiye’de petrol yok.
-8. {{< cloze answer="." mask="Not done yet." >}}? Hayır, hava soğuk değil.
-9. {{< cloze answer="." mask="Not done yet." >}}? Evet, televizyon bozuk.
-10. {{< cloze answer="." mask="Not done yet." >}}? Evet, okulda kantin var.
-11. {{< cloze answer="." mask="Not done yet." >}}? Hayır, bu bir dergi değil.
-12. {{< cloze answer="." mask="Not done yet." >}}? Evet, Ortaköy’de güzel barlar var.
-13. {{< cloze answer="." mask="Not done yet." >}}? Evet, Türkiye Avrupa’da.
-14. {{< cloze answer="." mask="Not done yet." >}}? Hayır, Antalya kuzeyde değil.
-15. {{< cloze answer="." mask="Not done yet." >}}? Evet, dolapta su var.
-16. {{< cloze answer="." mask="Not done yet." >}}? Evet, sınıfta TV var.
-17. {{< cloze answer="." mask="Not done yet." >}}? Hayır, kapı açık değil.
-18. {{< cloze answer="." mask="Not done yet." >}}? Hayır, Metin okulda değil.
-19. {{< cloze answer="." mask="Not done yet." >}}? Evet, o bir çocuk.
-20. {{< cloze answer="." mask="Not done yet." >}}? Hayır, evde radyo yok.
+1. {{< cloze answer="Bu bir dergi mi" mask="Bu bir ..... ...." >}}? Hayır, bu bir kitap değil.
+2. {{< cloze answer="Sınıfta kedi var mı" mask="Sınıfta .... ... .." >}}? Hayır, sınıfta kedi yok.
+3. {{< cloze answer="Kitapta fotoğraf var mı" mask="Kitapta ........ ... .." >}}? Evet, kitapta fotoğraf var.
+4. {{< cloze answer="İstanbul kalabalık mı" mask="İstanbul ......... .." >}}? Evet, İstanbul kalabalık.
+5. {{< cloze answer="David Türk mü" mask="David .... .." >}}? Hayır, David Türk değil.
+6. {{< cloze answer="İstanbul’da üniversite var mı" mask="İstanbul’da .......... ... .." >}}? Evet, İstanbul’da üniversite var.
+7. {{< cloze answer="Türkiye’de petrol var mı" mask="Türkiye’de ...... ... .." >}}? Hayır, Türkiye’de petrol yok.
+8. {{< cloze answer="Hava soğuk mu" mask="Hava ..... .." >}}? Hayır, hava soğuk değil.
+9. {{< cloze answer="Televizyon bozuk mu" mask="Televizyon ..... .." >}}? Evet, televizyon bozuk.
+10. {{< cloze answer="Okulda kantin var mı" mask="Okulda ...... ... .." >}}? Evet, okulda kantin var.
+11. {{< cloze answer="Bu bir gazete mi" mask="Bu bir ...... .." >}}? Hayır, bu bir dergi değil.
+12. {{< cloze answer="Ortaköy’de güzel barlar var mı" mask="Ortaköy’de güzel ...... ... .." >}}? Evet, Ortaköy’de güzel barlar var.
+13. {{< cloze answer="Türkiye Avrupa’da mı" mask="Türkiye ........’.. .." >}}? Evet, Türkiye Avrupa’da.
+14. {{< cloze answer="Antalya kuzeyde mi" mask="Antalya ....... .." >}}? Hayır, Antalya kuzeyde değil.
+15. {{< cloze answer="Dolapta su var mı" mask="Dolapta .. ... .." >}}? Evet, dolapta su var.
+16. {{< cloze answer="Sınıfta TV var mı" mask="Sınıfta .. ... .." >}}? Evet, sınıfta TV var.
+17. {{< cloze answer="Kapı açık mı" mask="Kapı .... .." >}}? Hayır, kapı açık değil.
+18. {{< cloze answer="Metin okulda mı" mask="Metin ...... .." >}}? Hayır, Metin okulda değil.
+19. {{< cloze answer="O bir çocuk mu" mask="O bir ..... .." >}}? Evet, o bir çocuk.
+20. {{< cloze answer="Evde radyo var mı" mask="Evde ..... ... .." >}}? Hayır, evde radyo yok.
 
 ---

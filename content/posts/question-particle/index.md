@@ -3,10 +3,11 @@ date: '2026-01-31T20:23:20+02:00'
 draft: false
 showTOC: true
 tags:
- - beginner
- - pronunciation
- - phonology
- - voicing
+  - beginner
+  - grammar
+  - questions
+  - yes-no-questions
+  - vowel-harmony
 showReadingTime: true
 categories:
 cover:

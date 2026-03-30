@@ -12,9 +12,12 @@ showTOC: true
 showAuthor: true
 summary: A quick, practical guide to Turkish front/back vowels and how they control suffixes like plural -lar/-ler.
 tags:
+  - beginner
   - pronunciation
   - grammar
   - vowel-harmony
+  - turkish-vowels
+  - suffixes
 categories:
 ---
 
@@ -85,4 +88,3 @@ If the suffix has four vowel options, it still depends on the **last vowel** —
 If you can spot the last vowel quickly, most suffixes fall into place.
 
 ---
-

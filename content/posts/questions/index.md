@@ -5,6 +5,8 @@ tags:
   - beginner
   - grammar
   - questions
+  - question-words
+  - conversation
 draft: false
 author: Jacob Shore
 showReadingTime: true

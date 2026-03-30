@@ -2,9 +2,11 @@
 date: '2026-01-26T12:03:59+02:00'
 draft: false
 tags:
- - beginner
- - vocabulary
- - alphabet
+  - beginner
+  - vocabulary
+  - alphabet
+  - everyday-nouns
+  - reading-practice
 showReadingTime: true
 showTOC: true
 categories:
